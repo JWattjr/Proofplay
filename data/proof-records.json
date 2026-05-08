@@ -1,0 +1,28 @@
+[
+  {
+    "id": "proof_m3_e28a58ebe28a",
+    "eventId": "evt_1",
+    "userId": "user_1",
+    "missionId": "m3",
+    "proofType": "qr_scan",
+    "timestamp": "2026-05-08T22:49:48.896Z",
+    "location": "Polygon Booth",
+    "xpEarned": 70,
+    "validator": "backend",
+    "status": "validated",
+    "evidenceLabel": "QR checkpoint matched Polygon Booth",
+    "storage": {
+      "provider": "0G Storage",
+      "network": "0G Mainnet",
+      "chainId": 16661,
+      "contractAddress": "0x62D4144dB0F0a6fBBaeb6296c785C71B3D57C526",
+      "rootHash": "0x1af96b204ed37d89630924082c2cd1b4f8ae19bfff4914fa342c27f2b6eabcd4",
+      "txHash": "0xedd046c93e22f0fe87390b7688ca8f335cc107c90fdc3769612bc933fc36d855",
+      "txSeq": 96656,
+      "storageRef": "0g://0x1af96b204ed37d89630924082c2cd1b4f8ae19bfff4914fa342c27f2b6eabcd4",
+      "explorerUrl": "https://chainscan.0g.ai/tx/0xedd046c93e22f0fe87390b7688ca8f335cc107c90fdc3769612bc933fc36d855",
+      "uploadedAt": "2026-05-08T22:50:05.583Z",
+      "uploadKey": "proofs/evt_1/user_1/proof_m3_e28a58ebe28a"
+    }
+  }
+]
