@@ -23,6 +23,8 @@ create index if not exists proof_records_created_at_idx on public.proof_records 
 
 alter table public.proof_records enable row level security;
 
+drop policy if exists "Public can read proof receipts" on public.proof_records;
+
 create policy "Public can read proof receipts"
   on public.proof_records
   for select
@@ -45,6 +47,8 @@ create index if not exists user_profiles_wallet_address_idx on public.user_profi
 create index if not exists user_profiles_user_tag_idx on public.user_profiles (user_tag);
 
 alter table public.user_profiles enable row level security;
+
+drop policy if exists "Public can read user profiles" on public.user_profiles;
 
 create policy "Public can read user profiles"
   on public.user_profiles
@@ -78,6 +82,8 @@ create index if not exists community_events_status_idx on public.community_event
 
 alter table public.community_events enable row level security;
 
+drop policy if exists "Public can read published events" on public.community_events;
+
 create policy "Public can read published events"
   on public.community_events
   for select
@@ -98,6 +104,8 @@ create index if not exists event_registrations_event_id_idx on public.event_regi
 create index if not exists event_registrations_user_id_idx on public.event_registrations (user_id);
 
 alter table public.event_registrations enable row level security;
+
+drop policy if exists "Public can read event registration counts" on public.event_registrations;
 
 create policy "Public can read event registration counts"
   on public.event_registrations
@@ -120,6 +128,8 @@ create index if not exists user_connections_target_idx on public.user_connection
 create index if not exists user_connections_event_id_idx on public.user_connections (event_id);
 
 alter table public.user_connections enable row level security;
+
+drop policy if exists "Public can read user connections" on public.user_connections;
 
 create policy "Public can read user connections"
   on public.user_connections
