@@ -1,0 +1,10 @@
+{
+  "network": "0G Mainnet",
+  "chainId": 16661,
+  "contractName": "ProofRegistry",
+  "contractAddress": "0xbEE85061D8CAd149006977d7943cBf6063A57cb0",
+  "deploymentTx": "0xea7addff68dca0d2f8f89776cd7a5d3d83c7641dbd74e32e4c6286f6515db629",
+  "deployer": "0xbDAddD5CCe24C12BeAc39e0330A306A9118000ED",
+  "explorerUrl": "https://chainscan.0g.ai/address/0xbEE85061D8CAd149006977d7943cBf6063A57cb0",
+  "deployedAt": "2026-05-10"
+}

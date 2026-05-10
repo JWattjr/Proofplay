@@ -12,9 +12,13 @@ create table if not exists public.proof_records (
   evidence_label text not null,
   storage jsonb not null,
   media_storage jsonb,
+  chain_anchor jsonb,
   badge_id text,
   created_at timestamptz not null default now()
 );
+
+alter table public.proof_records
+  add column if not exists chain_anchor jsonb;
 
 create index if not exists proof_records_user_id_idx on public.proof_records (user_id);
 create index if not exists proof_records_event_id_idx on public.proof_records (event_id);
