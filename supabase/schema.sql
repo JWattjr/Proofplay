@@ -74,6 +74,7 @@ create table if not exists public.community_events (
   color text not null default 'var(--color-pastel-purple)',
   emoji text not null default '🎟️',
   status text not null default 'published',
+  visibility text not null default 'public',
   missions jsonb not null default '[]'::jsonb,
   share_url text,
   created_at timestamptz not null default now(),
